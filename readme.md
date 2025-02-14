@@ -61,3 +61,7 @@
 - [Crsky](https://github.com/crskycode/Malie_Script_Tool) （Malie ScriptTool）
 
 - [satan53x](https://github.com/satan53x/SExtractor) （Malie's packer）
+
+## 特别感谢
+- deca
+- akari
