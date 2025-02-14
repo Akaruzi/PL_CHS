@@ -1,0 +1,44 @@
+<svg width='800px' height='600px' xmlns:a='http://www.adobe.com/svg10-extensions' xmlns:m='' xmlns:ui=''>
+	<defs>
+		<filter id='Multiply'>
+			<feBlend mode='multiply' in2='BackgroundImage' in='SourceGraphic'/>
+		</filter>
+		<filter id='Add'>
+			<feBlend mode='screen' in2='BackgroundImage' in='SourceGraphic'/>
+		</filter>
+	</defs>
+	<image id='shortcut_frame' x='0' y='0' width='800' height='600' xlink:href='./shortcut_tex1.png' opacity='1' m:srcrect='0 0 800 600'/>
+	<defs>
+		<image id='exit_o' x='617' y='553' width='104' height='34' xlink:href='./shortcut_tex1.png' opacity='1' m:srcrect='0 601 104 34'/>
+	</defs>
+	<!-- [button] exit: -->
+	<g id='exit'>
+		<!-- イメージ -->
+		<defs>
+			<g id='exit_f'>
+				<use xlink:href='#exit_o'>
+					<animate attributeName='opacity' begin='0' dur='1' keyTimes='0;0.5;1' values='1;0;1' repeatDur='indefinite'/>
+				</use>
+			</g>
+		</defs>
+		<g id='exit_normal'>
+			<use xlink:href='#exit_n'/>
+		</g>
+		<g id='exit_over'>
+			<use xlink:href='#exit_n'/>
+			<use xlink:href='#exit_o'>
+				<animate attributeName='opacity' begin='0' dur='0.2' keyTimes='0;1' values='0;1' fill='freeze'/>
+			</use>
+		</g>
+		<g id='exit_focus'>
+			<use xlink:href='#exit_n'/>
+			<use xlink:href='#exit_f'/>
+		</g>
+		<g id='exit_focusover'>
+			<use xlink:href='#exit_n'/>
+			<use xlink:href='#exit_o'/>
+		</g>
+		<!-- ボタン -->
+		<ui:button tabstop='' id='exit_btn' x='624' y='560' width='90' height='20' off='#exit_normal' off_focus='#exit_focus' off_over='#exit_over' off_focusover='#exit_focusover'/>
+	</g>
+</svg>

@@ -1,0 +1,155 @@
+<svg width='800px' height='600px' xmlns:a='http://www.adobe.com/svg10-extensions' xmlns:m='' xmlns:ui=''>
+	<defs>
+		<filter id='Multiply'>
+			<feBlend mode='multiply' in2='BackgroundImage' in='SourceGraphic'/>
+		</filter>
+		<filter id='Add'>
+			<feBlend mode='screen' in2='BackgroundImage' in='SourceGraphic'/>
+		</filter>
+	</defs>
+	<ui:include id='game' transform='translate(0,0)' xlink:href='./game.svg'/>
+	<ui:include id='sound' transform='translate(0,0)' xlink:href='./sound.svg'/>
+	<defs>
+		<image id='tab_sound_c' x='574' y='552' width='130' height='30' xlink:href='./config_tex1.png' opacity='1' m:srcrect='111 0 130 30'/>
+		<image id='tab_game_c' x='454' y='551' width='110' height='31' xlink:href='./config_tex1.png' opacity='1' m:srcrect='0 0 110 31'/>
+		<image id='tab_game_o' x='459' y='557' width='100' height='20' xlink:href='./config_tex1.png' opacity='1' m:srcrect='0 63 100 20'/>
+		<image id='tab_sound_o' x='579' y='557' width='120' height='20' xlink:href='./config_tex1.png' opacity='1' m:srcrect='70 32 120 20'/>
+		<image id='exit_o' x='714' y='552' width='69' height='30' xlink:href='./config_tex1.png' opacity='1' m:srcrect='0 32 69 30'/>
+	</defs>
+	<!-- [option] tab:game:true -->
+	<g id='tab_game'>
+		<!-- イメージ -->
+		<defs>
+			<g id='tab_game_n'/>
+			<g id='tab_game_o'/>
+			<g id='tab_game_c'/>
+			<g id='tab_game_ov'>
+				<use xlink:href='#tab_game_o'>
+					<animate attributeName='opacity' begin='0' dur='0.2' keyTimes='0;1' values='0;1' fill='freeze'/>
+				</use>
+			</g>
+			<g id='tab_game_fc'>
+				<use xlink:href='#tab_game_o'>
+					<animate attributeName='opacity' begin='0' dur='1' keyTimes='0;0.5;1' values='1;0;1' repeatDur='indefinite'/>
+				</use>
+			</g>
+		</defs>
+		<!-- game(Check) -->
+		<g id='tab_game_check_normal'>
+			<use xlink:href='#tab_game_c'/>
+		</g>
+		<g id='tab_game_check_over'>
+			<use xlink:href='#tab_game_c'/>
+			<use xlink:href='#tab_game_ov'/>
+		</g>
+		<g id='tab_game_check_focus'>
+			<use xlink:href='#tab_game_c'/>
+			<use xlink:href='#tab_game_fc'/>
+		</g>
+		<g id='tab_game_check_focusover'>
+			<use xlink:href='#tab_game_c'/>
+			<use xlink:href='#tab_game_ov'/>
+		</g>
+		<!-- game(Uncheck) -->
+		<g id='tab_game_uncheck_normal'>
+			<use xlink:href='#tab_game_n'/>
+		</g>
+		<g id='tab_game_uncheck_over'>
+			<use xlink:href='#tab_game_n'/>
+			<use xlink:href='#tab_game_ov'/>
+		</g>
+		<g id='tab_game_uncheck_focus'>
+			<use xlink:href='#tab_game_n'/>
+			<use xlink:href='#tab_game_fc'/>
+		</g>
+		<g id='tab_game_uncheck_focusover'>
+			<use xlink:href='#tab_game_n'/>
+			<use xlink:href='#tab_game_ov'/>
+		</g>
+		<!-- ボタン -->
+		<ui:button id='tab_game_opt' tabstop='true' x='459' y='557' width='100' height='20' on='#tab_game_check_normal' on_focus='#tab_game_check_focus' on_over='#tab_game_check_over' on_focusover='#tab_game_check_focusover' off='#tab_game_uncheck_normal' off_focus='#tab_game_uncheck_focus' off_over='#tab_game_uncheck_over' off_focusover='#tab_game_uncheck_focusover'/>
+	</g>
+	<!-- [option] tab:sound:true -->
+	<g id='tab_sound'>
+		<!-- イメージ -->
+		<defs>
+			<g id='tab_sound_n'/>
+			<g id='tab_sound_o'/>
+			<g id='tab_sound_c'/>
+			<g id='tab_sound_ov'>
+				<use xlink:href='#tab_sound_o'>
+					<animate attributeName='opacity' begin='0' dur='0.2' keyTimes='0;1' values='0;1' fill='freeze'/>
+				</use>
+			</g>
+			<g id='tab_sound_fc'>
+				<use xlink:href='#tab_sound_o'>
+					<animate attributeName='opacity' begin='0' dur='1' keyTimes='0;0.5;1' values='1;0;1' repeatDur='indefinite'/>
+				</use>
+			</g>
+		</defs>
+		<!-- sound(Check) -->
+		<g id='tab_sound_check_normal'>
+			<use xlink:href='#tab_sound_c'/>
+		</g>
+		<g id='tab_sound_check_over'>
+			<use xlink:href='#tab_sound_c'/>
+			<use xlink:href='#tab_sound_ov'/>
+		</g>
+		<g id='tab_sound_check_focus'>
+			<use xlink:href='#tab_sound_c'/>
+			<use xlink:href='#tab_sound_fc'/>
+		</g>
+		<g id='tab_sound_check_focusover'>
+			<use xlink:href='#tab_sound_c'/>
+			<use xlink:href='#tab_sound_ov'/>
+		</g>
+		<!-- sound(Uncheck) -->
+		<g id='tab_sound_uncheck_normal'>
+			<use xlink:href='#tab_sound_n'/>
+		</g>
+		<g id='tab_sound_uncheck_over'>
+			<use xlink:href='#tab_sound_n'/>
+			<use xlink:href='#tab_sound_ov'/>
+		</g>
+		<g id='tab_sound_uncheck_focus'>
+			<use xlink:href='#tab_sound_n'/>
+			<use xlink:href='#tab_sound_fc'/>
+		</g>
+		<g id='tab_sound_uncheck_focusover'>
+			<use xlink:href='#tab_sound_n'/>
+			<use xlink:href='#tab_sound_ov'/>
+		</g>
+		<!-- ボタン -->
+		<ui:button id='tab_sound_opt' tabstop='true' x='579' y='557' width='120' height='20' on='#tab_sound_check_normal' on_focus='#tab_sound_check_focus' on_over='#tab_sound_check_over' on_focusover='#tab_sound_check_focusover' off='#tab_sound_uncheck_normal' off_focus='#tab_sound_uncheck_focus' off_over='#tab_sound_uncheck_over' off_focusover='#tab_sound_uncheck_focusover'/>
+	</g>
+	<!-- [button] exit:true -->
+	<g id='exit'>
+		<!-- イメージ -->
+		<defs>
+			<g id='exit_f'>
+				<use xlink:href='#exit_o'>
+					<animate attributeName='opacity' begin='0' dur='1' keyTimes='0;0.5;1' values='1;0;1' repeatDur='indefinite'/>
+				</use>
+			</g>
+		</defs>
+		<g id='exit_normal'>
+			<use xlink:href='#exit_n'/>
+		</g>
+		<g id='exit_over'>
+			<use xlink:href='#exit_n'/>
+			<use xlink:href='#exit_o'>
+				<animate attributeName='opacity' begin='0' dur='0.2' keyTimes='0;1' values='0;1' fill='freeze'/>
+			</use>
+		</g>
+		<g id='exit_focus'>
+			<use xlink:href='#exit_n'/>
+			<use xlink:href='#exit_f'/>
+		</g>
+		<g id='exit_focusover'>
+			<use xlink:href='#exit_n'/>
+			<use xlink:href='#exit_o'/>
+		</g>
+		<!-- ボタン -->
+		<ui:button tabstop='true' id='exit_btn' x='720' y='557' width='57' height='20' off='#exit_normal' off_focus='#exit_focus' off_over='#exit_over' off_focusover='#exit_focusover'/>
+	</g>
+</svg>

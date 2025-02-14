@@ -1,0 +1,35 @@
+name: Compile and release (PC)
+
+on:
+  push:
+    tags:
+    - '*'
+  pull_request:
+    tags:
+    - '*'
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: setup python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.11'
+        architecture: 'x64'
+    - run: pip install tqdm
+
+    - name: Compile patch (PC)
+      run: python compile_pcpl_pack_cn.py
+
+    - name: 'Get Previous tag'
+      id: previoustag
+      uses: "WyriHaximus/github-action-get-previous-tag@v1"
+      
+    - name: Release
+      run: gh release upload ${{ steps.previoustag.outputs.tag }} "pl_cn_patch.7z"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
