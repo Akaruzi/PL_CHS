@@ -1,0 +1,1101 @@
+<svg width='800px' height='600px' xmlns:a='http://www.adobe.com/svg10-extensions' xmlns:m='' xmlns:ui=''>
+	<defs>
+		<filter id='Multiply'>
+			<feBlend mode='multiply' in2='BackgroundImage' in='SourceGraphic'/>
+		</filter>
+		<filter id='Add'>
+			<feBlend mode='screen' in2='BackgroundImage' in='SourceGraphic'/>
+		</filter>
+	</defs>
+	<image id='frame' x='0' y='0' width='800' height='600' xlink:href='./game_tex1_cn.png' opacity='1' m:srcrect='0 0 800 600'/>
+	<defs>
+		<image id='autosave_no_o' x='698' y='450' width='50' height='17' xlink:href='./null.png' opacity='1' m:srcrect='648 650 50 17'/>
+		<image id='autosave_yes_o' x='639' y='453' width='33' height='17' xlink:href='./null.png' opacity='1' m:srcrect='772 650 33 17'/>
+		<image id='savecomment_no_o' x='698' y='426' width='50' height='17' xlink:href='./null.png' opacity='1' m:srcrect='648 650 50 17'/>
+		<image id='savecomment_yes_o' x='628' y='636' width='41' height='24' xlink:href='./null.png' opacity='1' m:srcrect='772 650 33 17'/>
+		<image id='autovoice_no_o' x='373' y='546' width='50' height='17' xlink:href='./null.png' opacity='1' m:srcrect='648 650 50 17'/>
+		<image id='autovoice_yes_o' x='308' y='546' width='33' height='17' xlink:href='./null.png' opacity='1' m:srcrect='772 650 33 17'/>
+		<image id='cgeffect_high_o' x='371' y='450' width='35' height='17' xlink:href='./null.png' opacity='1' m:srcrect='736 650 35 17'/>
+		<image id='cgeffect_normal_o' x='307' y='449' width='36' height='18' xlink:href='./null.png' opacity='1' m:srcrect='712 631 36 18'/>
+		<image id='charaeffect_high_o' x='371' y='426' width='35' height='17' xlink:href='./null.png' opacity='1' m:srcrect='736 650 35 17'/>
+		<image id='charaeffect_normal_o' x='307' y='425' width='36' height='18' xlink:href='./null.png' opacity='1' m:srcrect='712 631 36 18'/>
+		<image id='readcolor_no_o' x='373' y='356' width='50' height='17' xlink:href='./null.png' opacity='1' m:srcrect='648 650 50 17'/>
+		<image id='readcolor_yes_o' x='308' y='356' width='33' height='17' xlink:href='./null.png' opacity='1' m:srcrect='772 650 33 17'/>
+		<image id='skipspeed_high_o' x='370' y='331' width='36' height='17' xlink:href='./null.png' opacity='1' m:srcrect='699 650 36 17'/>
+		<image id='skipspeed_normal_o' x='307' y='330' width='36' height='18' xlink:href='./null.png' opacity='1' m:srcrect='712 631 36 18'/>
+		<image id='skip_all_o' x='371' y='306' width='52' height='17' xlink:href='./null.png' opacity='1' m:srcrect='595 650 52 17'/>
+		<image id='skip_readonly_o' x='303' y='313' width='71' height='17' xlink:href='./null.png' opacity='1' m:srcrect='523 650 71 17'/>
+		<image id='fontnext_o' x='449' y='231' width='14' height='16' xlink:href='./null.png' opacity='1' m:srcrect='995 631 14 16'/>
+		<image id='fontprev_o' x='269' y='231' width='14' height='16' xlink:href='./null.png' opacity='1' m:srcrect='806 650 14 16'/>
+		<image id='screen_full_o' x='392' y='160' width='116' height='15' xlink:href='./null.png' opacity='1' m:srcrect='821 650 116 15'/>
+		<image id='screen_window_o' x='277' y='160' width='92' height='15' xlink:href='./null.png' opacity='1' m:srcrect='0 668 92 15'/>
+		<image id='autosave_no_c' x='686' y='444' width='41' height='24' xlink:href='./null.png' opacity='1'/>
+		<image id='autosave_yes_c' x='639' y='453' width='41' height='24' xlink:href='./null.png' opacity='1'/>
+		<image id='savecomment_no_c' x='686' y='420' width='41' height='24' xlink:href='./null.png' opacity='1'/>
+		<image id='savecomment_yes_c' x='628' y='636' width='41' height='24' xlink:href='./null.png' opacity='1' />
+		<image id='autovoice_no_c' x='361' y='540' width='41' height='24' xlink:href='./null.png' opacity='1'/>
+		<image id='autovoice_yes_c' x='302' y='540' width='41' height='24' xlink:href='./null.png' opacity='1'/>
+		<image id='cgeffect_high_c' x='357' y='444' width='41' height='24' xlink:href='./null.png' opacity='1'/>
+		<image id='cgeffect_normal_c' x='302' y='444' width='41' height='24' xlink:href='./null.png' opacity='1'/>
+		<image id='charaeffect_high_c' x='357' y='420' width='41' height='24' xlink:href='./null.png' opacity='1'/>
+		<image id='charaeffect_normal_c' x='302' y='420' width='41' height='24' xlink:href='./null.png' opacity='1'/>
+		<image id='readcolor_no_c' x='361' y='350' width='41' height='24' xlink:href='./null.png' opacity='1'/>
+		<image id='readcolor_yes_c' x='302' y='350' width='41' height='24' xlink:href='./null.png' opacity='1'/>
+		<image id='skipspeed_high_c' x='359' y='325' width='41' height='24' xlink:href='./null.png' opacity='1'/>
+		<image id='skipspeed_normal_c' x='302' y='325' width='41' height='24' xlink:href='./null.png' opacity='1'/>
+		<image id='skip_all_c' x='371' y='303' width='41' height='24' xlink:href='./null.png' opacity='1'/>
+		<image id='skip_readonly_c' x='313' y='303' width='41' height='24' xlink:href='./null.png' opacity='1'/>
+		<image id='screen_full_c' x='381' y='154' width='132' height='27' xlink:href='./null.png' opacity='1'/>
+		<image id='screen_window_c' x='272' y='154' width='107' height='27' xlink:href='./null.png' opacity='1'/>
+		<image id='autosave_f' x='480' y='449' width='107' height='18' xlink:href='./null.png' opacity='1' m:srcrect='912 601 107 18'/>
+		<image id='savecomment_f' x='480' y='426' width='105' height='17' xlink:href='./null.png' opacity='1' m:srcrect='417 650 105 17'/>
+		<image id='autovoice_f' x='61' y='545' width='179' height='18' xlink:href='./null.png' opacity='1' m:srcrect='732 601 179 18'/>
+		<image id='autospeed_f' x='60' y='522' width='183' height='17' xlink:href='./null.png' opacity='1' m:srcrect='0 650 183 17'/>
+		<image id='cgeffect_f' x='61' y='449' width='150' height='18' xlink:href='./null.png' opacity='1' m:srcrect='180 631 150 18'/>
+		<image id='charaeffect_f' x='60' y='425' width='179' height='18' xlink:href='./null.png' opacity='1' m:srcrect='0 631 179 18'/>
+		<image id='readcolor_f' x='59' y='354' width='232' height='17' xlink:href='./null.png' opacity='1' m:srcrect='762 631 232 17'/>
+		<image id='skipspeed_f' x='60' y='328' width='107' height='18' xlink:href='./null.png' opacity='1' m:srcrect='331 631 107 18'/>
+		<image id='skip_f' x='60' y='303' width='107' height='18' xlink:href='./null.png' opacity='1' m:srcrect='439 631 107 18'/>
+		<image id='textspeed_f' x='60' y='279' width='72' height='18' xlink:href='./null.png' opacity='1' m:srcrect='639 631 72 18'/>
+		<image id='window_f' x='60' y='256' width='125' height='17' xlink:href='./null.png' opacity='1' m:srcrect='184 650 125 17'/>
+		<image id='font_f' x='60' y='232' width='106' height='17' xlink:href='./null.png' opacity='1' m:srcrect='310 650 106 17'/>
+		<image id='screen_f' x='59' y='159' width='91' height='18' xlink:href='./null.png' opacity='1' m:srcrect='547 631 91 18'/>
+	</defs>
+	<defs>
+		<g id='knob_normal'>
+			<image id='knob' x='-6' y='-9' width='12' height='18' xlink:href='./game_tex1.png' m:srcrect='749 631 12 18'/>
+		</g>
+		<g id='knob_focus'>
+			<image x='-6' y='-9' width='12' height='18' xlink:href='./game_tex1.png' m:srcrect='749 631 12 18'/>
+			<image x='-6' y='-9' width='12' height='18' xlink:href='./game_tex1.png' filter='#Add' m:srcrect='749 631 12 18'>
+				<animate attributeName='opacity' begin='0' dur='1' keyTimes='0;0.5;1' values='1;0;1' repeatDur='indefinite'/>
+			</image>
+		</g>
+		<g id='knob_over'>
+			<image x='-6' y='-9' width='12' height='18' xlink:href='./game_tex1.png' m:srcrect='749 631 12 18'/>
+			<image x='-6' y='-9' width='12' height='18' xlink:href='./game_tex1.png' filter='#Add' m:srcrect='749 631 12 18'>
+				<animate attributeName='opacity' begin='0' dur='0.2' keyTimes='0;1' values='0;1' fill='freeze'/>
+			</image>
+		</g>
+	</defs>
+	<!-- [option] screen:window:true -->
+	<g id='screen_window'>
+		<!-- イメージ -->
+		<defs>
+			<g id='screen_window_ov'>
+				<use xlink:href='#screen_window_o'>
+					<animate attributeName='opacity' begin='0' dur='0.2' keyTimes='0;1' values='0;1' fill='freeze'/>
+				</use>
+			</g>
+			<g id='screen_window_fc'>
+				<use xlink:href='#screen_window_o'>
+					<animate attributeName='opacity' begin='0' dur='1' keyTimes='0;0.5;1' values='1;0;1' repeatDur='indefinite'/>
+				</use>
+			</g>
+		</defs>
+		<!-- window(Check) -->
+		<g id='screen_window_check_normal'>
+			<use xlink:href='#screen_window_c'/>
+		</g>
+		<g id='screen_window_check_over'>
+			<use xlink:href='#screen_window_c'/>
+			<use xlink:href='#screen_window_ov'/>
+		</g>
+		<g id='screen_window_check_focus'>
+			<use xlink:href='#screen_f'/>
+			<use xlink:href='#screen_window_c'/>
+			<use xlink:href='#screen_window_fc'/>
+		</g>
+		<g id='screen_window_check_focusover'>
+			<use xlink:href='#screen_f'/>
+			<use xlink:href='#screen_window_c'/>
+			<use xlink:href='#screen_window_ov'/>
+		</g>
+		<!-- window(Uncheck) -->
+		<g id='screen_window_uncheck_normal'/>
+		<g id='screen_window_uncheck_over'>
+			<use xlink:href='#screen_window_n'/>
+			<use xlink:href='#screen_window_ov'/>
+		</g>
+		<g id='screen_window_uncheck_focus'>
+			<use xlink:href='#screen_f'/>
+			<use xlink:href='#screen_window_n'/>
+			<use xlink:href='#screen_window_fc'/>
+		</g>
+		<g id='screen_window_uncheck_focusover'>
+			<use xlink:href='#screen_f'/>
+			<use xlink:href='#screen_window_n'/>
+			<use xlink:href='#screen_window_ov'/>
+		</g>
+		<!-- ボタン -->
+		<ui:button id='screen_window_opt' tabstop='true' x='277' y='160' width='92' height='15' on='#screen_window_check_normal' on_focus='#screen_window_check_focus' on_over='#screen_window_check_over' on_focusover='#screen_window_check_focusover' off='#screen_window_uncheck_normal' off_focus='#screen_window_uncheck_focus' off_over='#screen_window_uncheck_over' off_focusover='#screen_window_uncheck_focusover'/>
+	</g>
+	<!-- [option] screen:full:true -->
+	<g id='screen_full'>
+		<!-- イメージ -->
+		<defs>
+			<g id='screen_full_ov'>
+				<use xlink:href='#screen_full_o'>
+					<animate attributeName='opacity' begin='0' dur='0.2' keyTimes='0;1' values='0;1' fill='freeze'/>
+				</use>
+			</g>
+			<g id='screen_full_fc'>
+				<use xlink:href='#screen_full_o'>
+					<animate attributeName='opacity' begin='0' dur='1' keyTimes='0;0.5;1' values='1;0;1' repeatDur='indefinite'/>
+				</use>
+			</g>
+		</defs>
+		<!-- full(Check) -->
+		<g id='screen_full_check_normal'>
+			<use xlink:href='#screen_full_c'/>
+		</g>
+		<g id='screen_full_check_over'>
+			<use xlink:href='#screen_full_c'/>
+			<use xlink:href='#screen_full_ov'/>
+		</g>
+		<g id='screen_full_check_focus'>
+			<use xlink:href='#screen_f'/>
+			<use xlink:href='#screen_full_c'/>
+			<use xlink:href='#screen_full_fc'/>
+		</g>
+		<g id='screen_full_check_focusover'>
+			<use xlink:href='#screen_f'/>
+			<use xlink:href='#screen_full_c'/>
+			<use xlink:href='#screen_full_ov'/>
+		</g>
+		<!-- full(Uncheck) -->
+		<g id='screen_full_uncheck_normal'/>
+		<g id='screen_full_uncheck_over'>
+			<use xlink:href='#screen_full_n'/>
+			<use xlink:href='#screen_full_ov'/>
+		</g>
+		<g id='screen_full_uncheck_focus'>
+			<use xlink:href='#screen_f'/>
+			<use xlink:href='#screen_full_n'/>
+			<use xlink:href='#screen_full_fc'/>
+		</g>
+		<g id='screen_full_uncheck_focusover'>
+			<use xlink:href='#screen_f'/>
+			<use xlink:href='#screen_full_n'/>
+			<use xlink:href='#screen_full_ov'/>
+		</g>
+		<!-- ボタン -->
+		<ui:button id='screen_full_opt' tabstop='true' x='392' y='160' width='116' height='15' on='#screen_full_check_normal' on_focus='#screen_full_check_focus' on_over='#screen_full_check_over' on_focusover='#screen_full_check_focusover' off='#screen_full_uncheck_normal' off_focus='#screen_full_uncheck_focus' off_over='#screen_full_uncheck_over' off_focusover='#screen_full_uncheck_focusover'/>
+	</g>
+	<!-- [button] fontprev:true -->
+	<g id='fontprev'>
+		<!-- イメージ -->
+		<defs>
+			<g id='fontprev_f'>
+				<use xlink:href='#fontprev_o'>
+					<animate attributeName='opacity' begin='0' dur='1' keyTimes='0;0.5;1' values='1;0;1' repeatDur='indefinite'/>
+				</use>
+			</g>
+		</defs>
+		<g id='fontprev_normal'>
+			<use xlink:href='#fontprev_n'/>
+		</g>
+		<g id='fontprev_over'>
+			<use xlink:href='#fontprev_n'/>
+			<use xlink:href='#fontprev_o'>
+				<animate attributeName='opacity' begin='0' dur='0.2' keyTimes='0;1' values='0;1' fill='freeze'/>
+			</use>
+		</g>
+		<g id='fontprev_focus'>
+			<use xlink:href='#fontprev_n'/>
+			<use xlink:href='#fontprev_f'/>
+		</g>
+		<g id='fontprev_focusover'>
+			<use xlink:href='#fontprev_n'/>
+			<use xlink:href='#fontprev_o'/>
+		</g>
+		<!-- ボタン -->
+		<ui:button tabstop='true' id='fontprev_btn' x='269' y='231' width='14' height='16' off='#fontprev_normal' off_focus='#fontprev_focus' off_over='#fontprev_over' off_focusover='#fontprev_focusover'/>
+	</g>
+	<!-- [richtext] fontface -->
+	<ui:richtext id='fontface' x='287' y='224' width='158' height='25' fontsize='20' color='' edge_color='black'>
+		fontface	</ui:richtext>
+	<!-- [button] fontnext:true -->
+	<g id='fontnext'>
+		<!-- イメージ -->
+		<defs>
+			<g id='fontnext_f'>
+				<use xlink:href='#fontnext_o'>
+					<animate attributeName='opacity' begin='0' dur='1' keyTimes='0;0.5;1' values='1;0;1' repeatDur='indefinite'/>
+				</use>
+			</g>
+		</defs>
+		<g id='fontnext_normal'>
+			<use xlink:href='#fontnext_n'/>
+		</g>
+		<g id='fontnext_over'>
+			<use xlink:href='#fontnext_n'/>
+			<use xlink:href='#fontnext_o'>
+				<animate attributeName='opacity' begin='0' dur='0.2' keyTimes='0;1' values='0;1' fill='freeze'/>
+			</use>
+		</g>
+		<g id='fontnext_focus'>
+			<use xlink:href='#fontnext_n'/>
+			<use xlink:href='#fontnext_f'/>
+		</g>
+		<g id='fontnext_focusover'>
+			<use xlink:href='#fontnext_n'/>
+			<use xlink:href='#fontnext_o'/>
+		</g>
+		<!-- ボタン -->
+		<ui:button tabstop='true' id='fontnext_btn' x='449' y='231' width='14' height='16' off='#fontnext_normal' off_focus='#fontnext_focus' off_over='#fontnext_over' off_focusover='#fontnext_focusover'/>
+	</g>
+	<!-- volume:window 0 100 10 12 knob -->
+	<g id='window'>
+		<use id='window_knob_normal' xlink:href='#knob'/>
+		<use id='window_knob_focus' xlink:href='#knob_focus'/>
+		<use id='window_knob_over' xlink:href='#knob_over'/>
+		<ui:scrollbar id='window_vol' tabstop='true' x='288' y='252' width='156' height='18' min='0' max='100' page='10' bar='12' slider-normal='#window_knob_normal' slider-focus='#window_knob_focus' slider-over='#window_knob_over'/>
+	</g>
+	<!-- volume:textspeed 1 9 1 12 knob -->
+	<g id='textspeed'>
+		<use id='textspeed_knob_normal' xlink:href='#knob'/>
+		<use id='textspeed_knob_focus' xlink:href='#knob_focus'/>
+		<use id='textspeed_knob_over' xlink:href='#knob_over'/>
+		<ui:scrollbar id='textspeed_vol' tabstop='true' x='288' y='276' width='156' height='18' min='1' max='9' page='1' bar='12' slider-normal='#textspeed_knob_normal' slider-focus='#textspeed_knob_focus' slider-over='#textspeed_knob_over'/>
+	</g>
+	<!-- [option] skip:readonly:true -->
+	<g id='skip_readonly'>
+		<!-- イメージ -->
+		<defs>
+			<g id='skip_readonly_ov'>
+				<use xlink:href='#skip_readonly_o'>
+					<animate attributeName='opacity' begin='0' dur='0.2' keyTimes='0;1' values='0;1' fill='freeze'/>
+				</use>
+			</g>
+			<g id='skip_readonly_fc'>
+				<use xlink:href='#skip_readonly_o'>
+					<animate attributeName='opacity' begin='0' dur='1' keyTimes='0;0.5;1' values='1;0;1' repeatDur='indefinite'/>
+				</use>
+			</g>
+		</defs>
+		<!-- readonly(Check) -->
+		<g id='skip_readonly_check_normal'>
+			<use xlink:href='#skip_readonly_c'/>
+		</g>
+		<g id='skip_readonly_check_over'>
+			<use xlink:href='#skip_readonly_c'/>
+			<use xlink:href='#skip_readonly_ov'/>
+		</g>
+		<g id='skip_readonly_check_focus'>
+			<use xlink:href='#skip_f'/>
+			<use xlink:href='#skip_readonly_c'/>
+			<use xlink:href='#skip_readonly_fc'/>
+		</g>
+		<g id='skip_readonly_check_focusover'>
+			<use xlink:href='#skip_f'/>
+			<use xlink:href='#skip_readonly_c'/>
+			<use xlink:href='#skip_readonly_ov'/>
+		</g>
+		<!-- readonly(Uncheck) -->
+		<g id='skip_readonly_uncheck_normal'/>
+		<g id='skip_readonly_uncheck_over'>
+			<use xlink:href='#skip_readonly_n'/>
+			<use xlink:href='#skip_readonly_ov'/>
+		</g>
+		<g id='skip_readonly_uncheck_focus'>
+			<use xlink:href='#skip_f'/>
+			<use xlink:href='#skip_readonly_n'/>
+			<use xlink:href='#skip_readonly_fc'/>
+		</g>
+		<g id='skip_readonly_uncheck_focusover'>
+			<use xlink:href='#skip_f'/>
+			<use xlink:href='#skip_readonly_n'/>
+			<use xlink:href='#skip_readonly_ov'/>
+		</g>
+		<!-- ボタン -->
+		<ui:button id='skip_readonly_opt' tabstop='true' x='271' y='306' width='71' height='17' on='#skip_readonly_check_normal' on_focus='#skip_readonly_check_focus' on_over='#skip_readonly_check_over' on_focusover='#skip_readonly_check_focusover' off='#skip_readonly_uncheck_normal' off_focus='#skip_readonly_uncheck_focus' off_over='#skip_readonly_uncheck_over' off_focusover='#skip_readonly_uncheck_focusover'/>
+	</g>
+	<!-- [option] skip:all:true -->
+	<g id='skip_all'>
+		<!-- イメージ -->
+		<defs>
+			<g id='skip_all_ov'>
+				<use xlink:href='#skip_all_o'>
+					<animate attributeName='opacity' begin='0' dur='0.2' keyTimes='0;1' values='0;1' fill='freeze'/>
+				</use>
+			</g>
+			<g id='skip_all_fc'>
+				<use xlink:href='#skip_all_o'>
+					<animate attributeName='opacity' begin='0' dur='1' keyTimes='0;0.5;1' values='1;0;1' repeatDur='indefinite'/>
+				</use>
+			</g>
+		</defs>
+		<!-- all(Check) -->
+		<g id='skip_all_check_normal'>
+			<use xlink:href='#skip_all_c'/>
+		</g>
+		<g id='skip_all_check_over'>
+			<use xlink:href='#skip_all_c'/>
+			<use xlink:href='#skip_all_ov'/>
+		</g>
+		<g id='skip_all_check_focus'>
+			<use xlink:href='#skip_f'/>
+			<use xlink:href='#skip_all_c'/>
+			<use xlink:href='#skip_all_fc'/>
+		</g>
+		<g id='skip_all_check_focusover'>
+			<use xlink:href='#skip_f'/>
+			<use xlink:href='#skip_all_c'/>
+			<use xlink:href='#skip_all_ov'/>
+		</g>
+		<!-- all(Uncheck) -->
+		<g id='skip_all_uncheck_normal'/>
+		<g id='skip_all_uncheck_over'>
+			<use xlink:href='#skip_all_n'/>
+			<use xlink:href='#skip_all_ov'/>
+		</g>
+		<g id='skip_all_uncheck_focus'>
+			<use xlink:href='#skip_f'/>
+			<use xlink:href='#skip_all_n'/>
+			<use xlink:href='#skip_all_fc'/>
+		</g>
+		<g id='skip_all_uncheck_focusover'>
+			<use xlink:href='#skip_f'/>
+			<use xlink:href='#skip_all_n'/>
+			<use xlink:href='#skip_all_ov'/>
+		</g>
+		<!-- ボタン -->
+		<ui:button id='skip_all_opt' tabstop='true' x='371' y='306' width='52' height='17' on='#skip_all_check_normal' on_focus='#skip_all_check_focus' on_over='#skip_all_check_over' on_focusover='#skip_all_check_focusover' off='#skip_all_uncheck_normal' off_focus='#skip_all_uncheck_focus' off_over='#skip_all_uncheck_over' off_focusover='#skip_all_uncheck_focusover'/>
+	</g>
+	<!-- [option] skipspeed:normal:true -->
+	<g id='skipspeed_normal'>
+		<!-- イメージ -->
+		<defs>
+			<g id='skipspeed_normal_ov'>
+				<use xlink:href='#skipspeed_normal_o'>
+					<animate attributeName='opacity' begin='0' dur='0.2' keyTimes='0;1' values='0;1' fill='freeze'/>
+				</use>
+			</g>
+			<g id='skipspeed_normal_fc'>
+				<use xlink:href='#skipspeed_normal_o'>
+					<animate attributeName='opacity' begin='0' dur='1' keyTimes='0;0.5;1' values='1;0;1' repeatDur='indefinite'/>
+				</use>
+			</g>
+		</defs>
+		<!-- normal(Check) -->
+		<g id='skipspeed_normal_check_normal'>
+			<use xlink:href='#skipspeed_normal_c'/>
+		</g>
+		<g id='skipspeed_normal_check_over'>
+			<use xlink:href='#skipspeed_normal_c'/>
+			<use xlink:href='#skipspeed_normal_ov'/>
+		</g>
+		<g id='skipspeed_normal_check_focus'>
+			<use xlink:href='#skipspeed_f'/>
+			<use xlink:href='#skipspeed_normal_c'/>
+			<use xlink:href='#skipspeed_normal_fc'/>
+		</g>
+		<g id='skipspeed_normal_check_focusover'>
+			<use xlink:href='#skipspeed_f'/>
+			<use xlink:href='#skipspeed_normal_c'/>
+			<use xlink:href='#skipspeed_normal_ov'/>
+		</g>
+		<!-- normal(Uncheck) -->
+		<g id='skipspeed_normal_uncheck_normal'/>
+		<g id='skipspeed_normal_uncheck_over'>
+			<use xlink:href='#skipspeed_normal_n'/>
+			<use xlink:href='#skipspeed_normal_ov'/>
+		</g>
+		<g id='skipspeed_normal_uncheck_focus'>
+			<use xlink:href='#skipspeed_f'/>
+			<use xlink:href='#skipspeed_normal_n'/>
+			<use xlink:href='#skipspeed_normal_fc'/>
+		</g>
+		<g id='skipspeed_normal_uncheck_focusover'>
+			<use xlink:href='#skipspeed_f'/>
+			<use xlink:href='#skipspeed_normal_n'/>
+			<use xlink:href='#skipspeed_normal_ov'/>
+		</g>
+		<!-- ボタン -->
+		<ui:button id='skipspeed_normal_opt' tabstop='true' x='307' y='330' width='36' height='18' on='#skipspeed_normal_check_normal' on_focus='#skipspeed_normal_check_focus' on_over='#skipspeed_normal_check_over' on_focusover='#skipspeed_normal_check_focusover' off='#skipspeed_normal_uncheck_normal' off_focus='#skipspeed_normal_uncheck_focus' off_over='#skipspeed_normal_uncheck_over' off_focusover='#skipspeed_normal_uncheck_focusover'/>
+	</g>
+	<!-- [option] skipspeed:high:true -->
+	<g id='skipspeed_high'>
+		<!-- イメージ -->
+		<defs>
+			<g id='skipspeed_high_ov'>
+				<use xlink:href='#skipspeed_high_o'>
+					<animate attributeName='opacity' begin='0' dur='0.2' keyTimes='0;1' values='0;1' fill='freeze'/>
+				</use>
+			</g>
+			<g id='skipspeed_high_fc'>
+				<use xlink:href='#skipspeed_high_o'>
+					<animate attributeName='opacity' begin='0' dur='1' keyTimes='0;0.5;1' values='1;0;1' repeatDur='indefinite'/>
+				</use>
+			</g>
+		</defs>
+		<!-- high(Check) -->
+		<g id='skipspeed_high_check_normal'>
+			<use xlink:href='#skipspeed_high_c'/>
+		</g>
+		<g id='skipspeed_high_check_over'>
+			<use xlink:href='#skipspeed_high_c'/>
+			<use xlink:href='#skipspeed_high_ov'/>
+		</g>
+		<g id='skipspeed_high_check_focus'>
+			<use xlink:href='#skipspeed_f'/>
+			<use xlink:href='#skipspeed_high_c'/>
+			<use xlink:href='#skipspeed_high_fc'/>
+		</g>
+		<g id='skipspeed_high_check_focusover'>
+			<use xlink:href='#skipspeed_f'/>
+			<use xlink:href='#skipspeed_high_c'/>
+			<use xlink:href='#skipspeed_high_ov'/>
+		</g>
+		<!-- high(Uncheck) -->
+		<g id='skipspeed_high_uncheck_normal'/>
+		<g id='skipspeed_high_uncheck_over'>
+			<use xlink:href='#skipspeed_high_n'/>
+			<use xlink:href='#skipspeed_high_ov'/>
+		</g>
+		<g id='skipspeed_high_uncheck_focus'>
+			<use xlink:href='#skipspeed_f'/>
+			<use xlink:href='#skipspeed_high_n'/>
+			<use xlink:href='#skipspeed_high_fc'/>
+		</g>
+		<g id='skipspeed_high_uncheck_focusover'>
+			<use xlink:href='#skipspeed_f'/>
+			<use xlink:href='#skipspeed_high_n'/>
+			<use xlink:href='#skipspeed_high_ov'/>
+		</g>
+		<!-- ボタン -->
+		<ui:button id='skipspeed_high_opt' tabstop='true' x='370' y='331' width='36' height='17' on='#skipspeed_high_check_normal' on_focus='#skipspeed_high_check_focus' on_over='#skipspeed_high_check_over' on_focusover='#skipspeed_high_check_focusover' off='#skipspeed_high_uncheck_normal' off_focus='#skipspeed_high_uncheck_focus' off_over='#skipspeed_high_uncheck_over' off_focusover='#skipspeed_high_uncheck_focusover'/>
+	</g>
+	<!-- [option] readcolor:yes:true -->
+	<g id='readcolor_yes'>
+		<!-- イメージ -->
+		<defs>
+			<g id='readcolor_yes_ov'>
+				<use xlink:href='#readcolor_yes_o'>
+					<animate attributeName='opacity' begin='0' dur='0.2' keyTimes='0;1' values='0;1' fill='freeze'/>
+				</use>
+			</g>
+			<g id='readcolor_yes_fc'>
+				<use xlink:href='#readcolor_yes_o'>
+					<animate attributeName='opacity' begin='0' dur='1' keyTimes='0;0.5;1' values='1;0;1' repeatDur='indefinite'/>
+				</use>
+			</g>
+		</defs>
+		<!-- yes(Check) -->
+		<g id='readcolor_yes_check_normal'>
+			<use xlink:href='#readcolor_yes_c'/>
+		</g>
+		<g id='readcolor_yes_check_over'>
+			<use xlink:href='#readcolor_yes_c'/>
+			<use xlink:href='#readcolor_yes_ov'/>
+		</g>
+		<g id='readcolor_yes_check_focus'>
+			<use xlink:href='#readcolor_f'/>
+			<use xlink:href='#readcolor_yes_c'/>
+			<use xlink:href='#readcolor_yes_fc'/>
+		</g>
+		<g id='readcolor_yes_check_focusover'>
+			<use xlink:href='#readcolor_f'/>
+			<use xlink:href='#readcolor_yes_c'/>
+			<use xlink:href='#readcolor_yes_ov'/>
+		</g>
+		<!-- yes(Uncheck) -->
+		<g id='readcolor_yes_uncheck_normal'/>
+		<g id='readcolor_yes_uncheck_over'>
+			<use xlink:href='#readcolor_yes_n'/>
+			<use xlink:href='#readcolor_yes_ov'/>
+		</g>
+		<g id='readcolor_yes_uncheck_focus'>
+			<use xlink:href='#readcolor_f'/>
+			<use xlink:href='#readcolor_yes_n'/>
+			<use xlink:href='#readcolor_yes_fc'/>
+		</g>
+		<g id='readcolor_yes_uncheck_focusover'>
+			<use xlink:href='#readcolor_f'/>
+			<use xlink:href='#readcolor_yes_n'/>
+			<use xlink:href='#readcolor_yes_ov'/>
+		</g>
+		<!-- ボタン -->
+		<ui:button id='readcolor_yes_opt' tabstop='true' x='308' y='356' width='33' height='17' on='#readcolor_yes_check_normal' on_focus='#readcolor_yes_check_focus' on_over='#readcolor_yes_check_over' on_focusover='#readcolor_yes_check_focusover' off='#readcolor_yes_uncheck_normal' off_focus='#readcolor_yes_uncheck_focus' off_over='#readcolor_yes_uncheck_over' off_focusover='#readcolor_yes_uncheck_focusover'/>
+	</g>
+	<!-- [option] readcolor:no:true -->
+	<g id='readcolor_no'>
+		<!-- イメージ -->
+		<defs>
+			<g id='readcolor_no_ov'>
+				<use xlink:href='#readcolor_no_o'>
+					<animate attributeName='opacity' begin='0' dur='0.2' keyTimes='0;1' values='0;1' fill='freeze'/>
+				</use>
+			</g>
+			<g id='readcolor_no_fc'>
+				<use xlink:href='#readcolor_no_o'>
+					<animate attributeName='opacity' begin='0' dur='1' keyTimes='0;0.5;1' values='1;0;1' repeatDur='indefinite'/>
+				</use>
+			</g>
+		</defs>
+		<!-- no(Check) -->
+		<g id='readcolor_no_check_normal'>
+			<use xlink:href='#readcolor_no_c'/>
+		</g>
+		<g id='readcolor_no_check_over'>
+			<use xlink:href='#readcolor_no_c'/>
+			<use xlink:href='#readcolor_no_ov'/>
+		</g>
+		<g id='readcolor_no_check_focus'>
+			<use xlink:href='#readcolor_f'/>
+			<use xlink:href='#readcolor_no_c'/>
+			<use xlink:href='#readcolor_no_fc'/>
+		</g>
+		<g id='readcolor_no_check_focusover'>
+			<use xlink:href='#readcolor_f'/>
+			<use xlink:href='#readcolor_no_c'/>
+			<use xlink:href='#readcolor_no_ov'/>
+		</g>
+		<!-- no(Uncheck) -->
+		<g id='readcolor_no_uncheck_normal'/>
+		<g id='readcolor_no_uncheck_over'>
+			<use xlink:href='#readcolor_no_n'/>
+			<use xlink:href='#readcolor_no_ov'/>
+		</g>
+		<g id='readcolor_no_uncheck_focus'>
+			<use xlink:href='#readcolor_f'/>
+			<use xlink:href='#readcolor_no_n'/>
+			<use xlink:href='#readcolor_no_fc'/>
+		</g>
+		<g id='readcolor_no_uncheck_focusover'>
+			<use xlink:href='#readcolor_f'/>
+			<use xlink:href='#readcolor_no_n'/>
+			<use xlink:href='#readcolor_no_ov'/>
+		</g>
+		<!-- ボタン -->
+		<ui:button id='readcolor_no_opt' tabstop='true' x='373' y='356' width='50' height='17' on='#readcolor_no_check_normal' on_focus='#readcolor_no_check_focus' on_over='#readcolor_no_check_over' on_focusover='#readcolor_no_check_focusover' off='#readcolor_no_uncheck_normal' off_focus='#readcolor_no_uncheck_focus' off_over='#readcolor_no_uncheck_over' off_focusover='#readcolor_no_uncheck_focusover'/>
+	</g>
+	<!-- [option] charaeffect:normal:true -->
+	<g id='charaeffect_normal'>
+		<!-- イメージ -->
+		<defs>
+			<g id='charaeffect_normal_ov'>
+				<use xlink:href='#charaeffect_normal_o'>
+					<animate attributeName='opacity' begin='0' dur='0.2' keyTimes='0;1' values='0;1' fill='freeze'/>
+				</use>
+			</g>
+			<g id='charaeffect_normal_fc'>
+				<use xlink:href='#charaeffect_normal_o'>
+					<animate attributeName='opacity' begin='0' dur='1' keyTimes='0;0.5;1' values='1;0;1' repeatDur='indefinite'/>
+				</use>
+			</g>
+		</defs>
+		<!-- normal(Check) -->
+		<g id='charaeffect_normal_check_normal'>
+			<use xlink:href='#charaeffect_normal_c'/>
+		</g>
+		<g id='charaeffect_normal_check_over'>
+			<use xlink:href='#charaeffect_normal_c'/>
+			<use xlink:href='#charaeffect_normal_ov'/>
+		</g>
+		<g id='charaeffect_normal_check_focus'>
+			<use xlink:href='#charaeffect_f'/>
+			<use xlink:href='#charaeffect_normal_c'/>
+			<use xlink:href='#charaeffect_normal_fc'/>
+		</g>
+		<g id='charaeffect_normal_check_focusover'>
+			<use xlink:href='#charaeffect_f'/>
+			<use xlink:href='#charaeffect_normal_c'/>
+			<use xlink:href='#charaeffect_normal_ov'/>
+		</g>
+		<!-- normal(Uncheck) -->
+		<g id='charaeffect_normal_uncheck_normal'/>
+		<g id='charaeffect_normal_uncheck_over'>
+			<use xlink:href='#charaeffect_normal_n'/>
+			<use xlink:href='#charaeffect_normal_ov'/>
+		</g>
+		<g id='charaeffect_normal_uncheck_focus'>
+			<use xlink:href='#charaeffect_f'/>
+			<use xlink:href='#charaeffect_normal_n'/>
+			<use xlink:href='#charaeffect_normal_fc'/>
+		</g>
+		<g id='charaeffect_normal_uncheck_focusover'>
+			<use xlink:href='#charaeffect_f'/>
+			<use xlink:href='#charaeffect_normal_n'/>
+			<use xlink:href='#charaeffect_normal_ov'/>
+		</g>
+		<!-- ボタン -->
+		<ui:button id='charaeffect_normal_opt' tabstop='true' x='307' y='425' width='36' height='18' on='#charaeffect_normal_check_normal' on_focus='#charaeffect_normal_check_focus' on_over='#charaeffect_normal_check_over' on_focusover='#charaeffect_normal_check_focusover' off='#charaeffect_normal_uncheck_normal' off_focus='#charaeffect_normal_uncheck_focus' off_over='#charaeffect_normal_uncheck_over' off_focusover='#charaeffect_normal_uncheck_focusover'/>
+	</g>
+	<!-- [option] charaeffect:high:true -->
+	<g id='charaeffect_high'>
+		<!-- イメージ -->
+		<defs>
+			<g id='charaeffect_high_ov'>
+				<use xlink:href='#charaeffect_high_o'>
+					<animate attributeName='opacity' begin='0' dur='0.2' keyTimes='0;1' values='0;1' fill='freeze'/>
+				</use>
+			</g>
+			<g id='charaeffect_high_fc'>
+				<use xlink:href='#charaeffect_high_o'>
+					<animate attributeName='opacity' begin='0' dur='1' keyTimes='0;0.5;1' values='1;0;1' repeatDur='indefinite'/>
+				</use>
+			</g>
+		</defs>
+		<!-- high(Check) -->
+		<g id='charaeffect_high_check_normal'>
+			<use xlink:href='#charaeffect_high_c'/>
+		</g>
+		<g id='charaeffect_high_check_over'>
+			<use xlink:href='#charaeffect_high_c'/>
+			<use xlink:href='#charaeffect_high_ov'/>
+		</g>
+		<g id='charaeffect_high_check_focus'>
+			<use xlink:href='#charaeffect_f'/>
+			<use xlink:href='#charaeffect_high_c'/>
+			<use xlink:href='#charaeffect_high_fc'/>
+		</g>
+		<g id='charaeffect_high_check_focusover'>
+			<use xlink:href='#charaeffect_f'/>
+			<use xlink:href='#charaeffect_high_c'/>
+			<use xlink:href='#charaeffect_high_ov'/>
+		</g>
+		<!-- high(Uncheck) -->
+		<g id='charaeffect_high_uncheck_normal'/>
+		<g id='charaeffect_high_uncheck_over'>
+			<use xlink:href='#charaeffect_high_n'/>
+			<use xlink:href='#charaeffect_high_ov'/>
+		</g>
+		<g id='charaeffect_high_uncheck_focus'>
+			<use xlink:href='#charaeffect_f'/>
+			<use xlink:href='#charaeffect_high_n'/>
+			<use xlink:href='#charaeffect_high_fc'/>
+		</g>
+		<g id='charaeffect_high_uncheck_focusover'>
+			<use xlink:href='#charaeffect_f'/>
+			<use xlink:href='#charaeffect_high_n'/>
+			<use xlink:href='#charaeffect_high_ov'/>
+		</g>
+		<!-- ボタン -->
+		<ui:button id='charaeffect_high_opt' tabstop='true' x='371' y='426' width='35' height='17' on='#charaeffect_high_check_normal' on_focus='#charaeffect_high_check_focus' on_over='#charaeffect_high_check_over' on_focusover='#charaeffect_high_check_focusover' off='#charaeffect_high_uncheck_normal' off_focus='#charaeffect_high_uncheck_focus' off_over='#charaeffect_high_uncheck_over' off_focusover='#charaeffect_high_uncheck_focusover'/>
+	</g>
+	<!-- [option] cgeffect:normal:true -->
+	<g id='cgeffect_normal'>
+		<!-- イメージ -->
+		<defs>
+			<g id='cgeffect_normal_ov'>
+				<use xlink:href='#cgeffect_normal_o'>
+					<animate attributeName='opacity' begin='0' dur='0.2' keyTimes='0;1' values='0;1' fill='freeze'/>
+				</use>
+			</g>
+			<g id='cgeffect_normal_fc'>
+				<use xlink:href='#cgeffect_normal_o'>
+					<animate attributeName='opacity' begin='0' dur='1' keyTimes='0;0.5;1' values='1;0;1' repeatDur='indefinite'/>
+				</use>
+			</g>
+		</defs>
+		<!-- normal(Check) -->
+		<g id='cgeffect_normal_check_normal'>
+			<use xlink:href='#cgeffect_normal_c'/>
+		</g>
+		<g id='cgeffect_normal_check_over'>
+			<use xlink:href='#cgeffect_normal_c'/>
+			<use xlink:href='#cgeffect_normal_ov'/>
+		</g>
+		<g id='cgeffect_normal_check_focus'>
+			<use xlink:href='#cgeffect_f'/>
+			<use xlink:href='#cgeffect_normal_c'/>
+			<use xlink:href='#cgeffect_normal_fc'/>
+		</g>
+		<g id='cgeffect_normal_check_focusover'>
+			<use xlink:href='#cgeffect_f'/>
+			<use xlink:href='#cgeffect_normal_c'/>
+			<use xlink:href='#cgeffect_normal_ov'/>
+		</g>
+		<!-- normal(Uncheck) -->
+		<g id='cgeffect_normal_uncheck_normal'/>
+		<g id='cgeffect_normal_uncheck_over'>
+			<use xlink:href='#cgeffect_normal_n'/>
+			<use xlink:href='#cgeffect_normal_ov'/>
+		</g>
+		<g id='cgeffect_normal_uncheck_focus'>
+			<use xlink:href='#cgeffect_f'/>
+			<use xlink:href='#cgeffect_normal_n'/>
+			<use xlink:href='#cgeffect_normal_fc'/>
+		</g>
+		<g id='cgeffect_normal_uncheck_focusover'>
+			<use xlink:href='#cgeffect_f'/>
+			<use xlink:href='#cgeffect_normal_n'/>
+			<use xlink:href='#cgeffect_normal_ov'/>
+		</g>
+		<!-- ボタン -->
+		<ui:button id='cgeffect_normal_opt' tabstop='true' x='307' y='449' width='36' height='18' on='#cgeffect_normal_check_normal' on_focus='#cgeffect_normal_check_focus' on_over='#cgeffect_normal_check_over' on_focusover='#cgeffect_normal_check_focusover' off='#cgeffect_normal_uncheck_normal' off_focus='#cgeffect_normal_uncheck_focus' off_over='#cgeffect_normal_uncheck_over' off_focusover='#cgeffect_normal_uncheck_focusover'/>
+	</g>
+	<!-- [option] cgeffect:high:true -->
+	<g id='cgeffect_high'>
+		<!-- イメージ -->
+		<defs>
+			<g id='cgeffect_high_ov'>
+				<use xlink:href='#cgeffect_high_o'>
+					<animate attributeName='opacity' begin='0' dur='0.2' keyTimes='0;1' values='0;1' fill='freeze'/>
+				</use>
+			</g>
+			<g id='cgeffect_high_fc'>
+				<use xlink:href='#cgeffect_high_o'>
+					<animate attributeName='opacity' begin='0' dur='1' keyTimes='0;0.5;1' values='1;0;1' repeatDur='indefinite'/>
+				</use>
+			</g>
+		</defs>
+		<!-- high(Check) -->
+		<g id='cgeffect_high_check_normal'>
+			<use xlink:href='#cgeffect_high_c'/>
+		</g>
+		<g id='cgeffect_high_check_over'>
+			<use xlink:href='#cgeffect_high_c'/>
+			<use xlink:href='#cgeffect_high_ov'/>
+		</g>
+		<g id='cgeffect_high_check_focus'>
+			<use xlink:href='#cgeffect_f'/>
+			<use xlink:href='#cgeffect_high_c'/>
+			<use xlink:href='#cgeffect_high_fc'/>
+		</g>
+		<g id='cgeffect_high_check_focusover'>
+			<use xlink:href='#cgeffect_f'/>
+			<use xlink:href='#cgeffect_high_c'/>
+			<use xlink:href='#cgeffect_high_ov'/>
+		</g>
+		<!-- high(Uncheck) -->
+		<g id='cgeffect_high_uncheck_normal'/>
+		<g id='cgeffect_high_uncheck_over'>
+			<use xlink:href='#cgeffect_high_n'/>
+			<use xlink:href='#cgeffect_high_ov'/>
+		</g>
+		<g id='cgeffect_high_uncheck_focus'>
+			<use xlink:href='#cgeffect_f'/>
+			<use xlink:href='#cgeffect_high_n'/>
+			<use xlink:href='#cgeffect_high_fc'/>
+		</g>
+		<g id='cgeffect_high_uncheck_focusover'>
+			<use xlink:href='#cgeffect_f'/>
+			<use xlink:href='#cgeffect_high_n'/>
+			<use xlink:href='#cgeffect_high_ov'/>
+		</g>
+		<!-- ボタン -->
+		<ui:button id='cgeffect_high_opt' tabstop='true' x='371' y='450' width='35' height='17' on='#cgeffect_high_check_normal' on_focus='#cgeffect_high_check_focus' on_over='#cgeffect_high_check_over' on_focusover='#cgeffect_high_check_focusover' off='#cgeffect_high_uncheck_normal' off_focus='#cgeffect_high_uncheck_focus' off_over='#cgeffect_high_uncheck_over' off_focusover='#cgeffect_high_uncheck_focusover'/>
+	</g>
+	<!-- volume:autospeed 100 400 10 12 knob -->
+	<g id='autospeed'>
+		<use id='autospeed_knob_normal' xlink:href='#knob'/>
+		<use id='autospeed_knob_focus' xlink:href='#knob_focus'/>
+		<use id='autospeed_knob_over' xlink:href='#knob_over'/>
+		<ui:scrollbar id='autospeed_vol' tabstop='true' x='288' y='518' width='156' height='18' min='100' max='400' page='10' bar='12' slider-normal='#autospeed_knob_normal' slider-focus='#autospeed_knob_focus' slider-over='#autospeed_knob_over'/>
+	</g>
+	<!-- [option] autovoice:yes:true -->
+	<g id='autovoice_yes'>
+		<!-- イメージ -->
+		<defs>
+			<g id='autovoice_yes_ov'>
+				<use xlink:href='#autovoice_yes_o'>
+					<animate attributeName='opacity' begin='0' dur='0.2' keyTimes='0;1' values='0;1' fill='freeze'/>
+				</use>
+			</g>
+			<g id='autovoice_yes_fc'>
+				<use xlink:href='#autovoice_yes_o'>
+					<animate attributeName='opacity' begin='0' dur='1' keyTimes='0;0.5;1' values='1;0;1' repeatDur='indefinite'/>
+				</use>
+			</g>
+		</defs>
+		<!-- yes(Check) -->
+		<g id='autovoice_yes_check_normal'>
+			<use xlink:href='#autovoice_yes_c'/>
+		</g>
+		<g id='autovoice_yes_check_over'>
+			<use xlink:href='#autovoice_yes_c'/>
+			<use xlink:href='#autovoice_yes_ov'/>
+		</g>
+		<g id='autovoice_yes_check_focus'>
+			<use xlink:href='#autovoice_f'/>
+			<use xlink:href='#autovoice_yes_c'/>
+			<use xlink:href='#autovoice_yes_fc'/>
+		</g>
+		<g id='autovoice_yes_check_focusover'>
+			<use xlink:href='#autovoice_f'/>
+			<use xlink:href='#autovoice_yes_c'/>
+			<use xlink:href='#autovoice_yes_ov'/>
+		</g>
+		<!-- yes(Uncheck) -->
+		<g id='autovoice_yes_uncheck_normal'/>
+		<g id='autovoice_yes_uncheck_over'>
+			<use xlink:href='#autovoice_yes_n'/>
+			<use xlink:href='#autovoice_yes_ov'/>
+		</g>
+		<g id='autovoice_yes_uncheck_focus'>
+			<use xlink:href='#autovoice_f'/>
+			<use xlink:href='#autovoice_yes_n'/>
+			<use xlink:href='#autovoice_yes_fc'/>
+		</g>
+		<g id='autovoice_yes_uncheck_focusover'>
+			<use xlink:href='#autovoice_f'/>
+			<use xlink:href='#autovoice_yes_n'/>
+			<use xlink:href='#autovoice_yes_ov'/>
+		</g>
+		<!-- ボタン -->
+		<ui:button id='autovoice_yes_opt' tabstop='true' x='308' y='546' width='33' height='17' on='#autovoice_yes_check_normal' on_focus='#autovoice_yes_check_focus' on_over='#autovoice_yes_check_over' on_focusover='#autovoice_yes_check_focusover' off='#autovoice_yes_uncheck_normal' off_focus='#autovoice_yes_uncheck_focus' off_over='#autovoice_yes_uncheck_over' off_focusover='#autovoice_yes_uncheck_focusover'/>
+	</g>
+	<!-- [option] autovoice:no:true -->
+	<g id='autovoice_no'>
+		<!-- イメージ -->
+		<defs>
+			<g id='autovoice_no_ov'>
+				<use xlink:href='#autovoice_no_o'>
+					<animate attributeName='opacity' begin='0' dur='0.2' keyTimes='0;1' values='0;1' fill='freeze'/>
+				</use>
+			</g>
+			<g id='autovoice_no_fc'>
+				<use xlink:href='#autovoice_no_o'>
+					<animate attributeName='opacity' begin='0' dur='1' keyTimes='0;0.5;1' values='1;0;1' repeatDur='indefinite'/>
+				</use>
+			</g>
+		</defs>
+		<!-- no(Check) -->
+		<g id='autovoice_no_check_normal'>
+			<use xlink:href='#autovoice_no_c'/>
+		</g>
+		<g id='autovoice_no_check_over'>
+			<use xlink:href='#autovoice_no_c'/>
+			<use xlink:href='#autovoice_no_ov'/>
+		</g>
+		<g id='autovoice_no_check_focus'>
+			<use xlink:href='#autovoice_f'/>
+			<use xlink:href='#autovoice_no_c'/>
+			<use xlink:href='#autovoice_no_fc'/>
+		</g>
+		<g id='autovoice_no_check_focusover'>
+			<use xlink:href='#autovoice_f'/>
+			<use xlink:href='#autovoice_no_c'/>
+			<use xlink:href='#autovoice_no_ov'/>
+		</g>
+		<!-- no(Uncheck) -->
+		<g id='autovoice_no_uncheck_normal'/>
+		<g id='autovoice_no_uncheck_over'>
+			<use xlink:href='#autovoice_no_n'/>
+			<use xlink:href='#autovoice_no_ov'/>
+		</g>
+		<g id='autovoice_no_uncheck_focus'>
+			<use xlink:href='#autovoice_f'/>
+			<use xlink:href='#autovoice_no_n'/>
+			<use xlink:href='#autovoice_no_fc'/>
+		</g>
+		<g id='autovoice_no_uncheck_focusover'>
+			<use xlink:href='#autovoice_f'/>
+			<use xlink:href='#autovoice_no_n'/>
+			<use xlink:href='#autovoice_no_ov'/>
+		</g>
+		<!-- ボタン -->
+		<ui:button id='autovoice_no_opt' tabstop='true' x='373' y='546' width='50' height='17' on='#autovoice_no_check_normal' on_focus='#autovoice_no_check_focus' on_over='#autovoice_no_check_over' on_focusover='#autovoice_no_check_focusover' off='#autovoice_no_uncheck_normal' off_focus='#autovoice_no_uncheck_focus' off_over='#autovoice_no_uncheck_over' off_focusover='#autovoice_no_uncheck_focusover'/>
+	</g>
+	<!-- [option] savecomment:yes:true -->
+	<g id='savecomment_yes'>
+		<!-- イメージ -->
+		<defs>
+			<g id='savecomment_yes_ov'>
+				<use xlink:href='#savecomment_yes_o'>
+					<animate attributeName='opacity' begin='0' dur='0.2' keyTimes='0;1' values='0;1' fill='freeze'/>
+				</use>
+			</g>
+			<g id='savecomment_yes_fc'>
+				<use xlink:href='#savecomment_yes_o'>
+					<animate attributeName='opacity' begin='0' dur='1' keyTimes='0;0.5;1' values='1;0;1' repeatDur='indefinite'/>
+				</use>
+			</g>
+		</defs>
+		<!-- yes(Check) -->
+		<g id='savecomment_yes_check_normal'>
+			<use xlink:href='#savecomment_yes_c'/>
+		</g>
+		<g id='savecomment_yes_check_over'>
+			<use xlink:href='#savecomment_yes_c'/>
+			<use xlink:href='#savecomment_yes_ov'/>
+		</g>
+		<g id='savecomment_yes_check_focus'>
+			<use xlink:href='#savecomment_f'/>
+			<use xlink:href='#savecomment_yes_c'/>
+			<use xlink:href='#savecomment_yes_fc'/>
+		</g>
+		<g id='savecomment_yes_check_focusover'>
+			<use xlink:href='#savecomment_f'/>
+			<use xlink:href='#savecomment_yes_c'/>
+			<use xlink:href='#savecomment_yes_ov'/>
+		</g>
+		<!-- yes(Uncheck) -->
+		<g id='savecomment_yes_uncheck_normal'/>
+		<g id='savecomment_yes_uncheck_over'>
+			<use xlink:href='#savecomment_yes_n'/>
+			<use xlink:href='#savecomment_yes_ov'/>
+		</g>
+		<g id='savecomment_yes_uncheck_focus'>
+			<use xlink:href='#savecomment_f'/>
+			<use xlink:href='#savecomment_yes_n'/>
+			<use xlink:href='#savecomment_yes_fc'/>
+		</g>
+		<g id='savecomment_yes_uncheck_focusover'>
+			<use xlink:href='#savecomment_f'/>
+			<use xlink:href='#savecomment_yes_n'/>
+			<use xlink:href='#savecomment_yes_ov'/>
+		</g>
+		<!-- ボタン -->
+		<ui:button id='savecomment_yes_opt' tabstop='true' x='633' y='426' width='33' height='17' on='#savecomment_yes_check_normal' on_focus='#savecomment_yes_check_focus' on_over='#savecomment_yes_check_over' on_focusover='#savecomment_yes_check_focusover' off='#savecomment_yes_uncheck_normal' off_focus='#savecomment_yes_uncheck_focus' off_over='#savecomment_yes_uncheck_over' off_focusover='#savecomment_yes_uncheck_focusover'/>
+	</g>
+	<!-- [option] savecomment:no:true -->
+	<g id='savecomment_no'>
+		<!-- イメージ -->
+		<defs>
+			<g id='savecomment_no_ov'>
+				<use xlink:href='#savecomment_no_o'>
+					<animate attributeName='opacity' begin='0' dur='0.2' keyTimes='0;1' values='0;1' fill='freeze'/>
+				</use>
+			</g>
+			<g id='savecomment_no_fc'>
+				<use xlink:href='#savecomment_no_o'>
+					<animate attributeName='opacity' begin='0' dur='1' keyTimes='0;0.5;1' values='1;0;1' repeatDur='indefinite'/>
+				</use>
+			</g>
+		</defs>
+		<!-- no(Check) -->
+		<g id='savecomment_no_check_normal'>
+			<use xlink:href='#savecomment_no_c'/>
+		</g>
+		<g id='savecomment_no_check_over'>
+			<use xlink:href='#savecomment_no_c'/>
+			<use xlink:href='#savecomment_no_ov'/>
+		</g>
+		<g id='savecomment_no_check_focus'>
+			<use xlink:href='#savecomment_f'/>
+			<use xlink:href='#savecomment_no_c'/>
+			<use xlink:href='#savecomment_no_fc'/>
+		</g>
+		<g id='savecomment_no_check_focusover'>
+			<use xlink:href='#savecomment_f'/>
+			<use xlink:href='#savecomment_no_c'/>
+			<use xlink:href='#savecomment_no_ov'/>
+		</g>
+		<!-- no(Uncheck) -->
+		<g id='savecomment_no_uncheck_normal'/>
+		<g id='savecomment_no_uncheck_over'>
+			<use xlink:href='#savecomment_no_n'/>
+			<use xlink:href='#savecomment_no_ov'/>
+		</g>
+		<g id='savecomment_no_uncheck_focus'>
+			<use xlink:href='#savecomment_f'/>
+			<use xlink:href='#savecomment_no_n'/>
+			<use xlink:href='#savecomment_no_fc'/>
+		</g>
+		<g id='savecomment_no_uncheck_focusover'>
+			<use xlink:href='#savecomment_f'/>
+			<use xlink:href='#savecomment_no_n'/>
+			<use xlink:href='#savecomment_no_ov'/>
+		</g>
+		<!-- ボタン -->
+		<ui:button id='savecomment_no_opt' tabstop='true' x='698' y='426' width='50' height='17' on='#savecomment_no_check_normal' on_focus='#savecomment_no_check_focus' on_over='#savecomment_no_check_over' on_focusover='#savecomment_no_check_focusover' off='#savecomment_no_uncheck_normal' off_focus='#savecomment_no_uncheck_focus' off_over='#savecomment_no_uncheck_over' off_focusover='#savecomment_no_uncheck_focusover'/>
+	</g>
+	<!-- [option] autosave:yes:true -->
+	<g id='autosave_yes'>
+		<!-- イメージ -->
+		<defs>
+			<g id='autosave_yes_ov'>
+				<use xlink:href='#autosave_yes_o'>
+					<animate attributeName='opacity' begin='0' dur='0.2' keyTimes='0;1' values='0;1' fill='freeze'/>
+				</use>
+			</g>
+			<g id='autosave_yes_fc'>
+				<use xlink:href='#autosave_yes_o'>
+					<animate attributeName='opacity' begin='0' dur='1' keyTimes='0;0.5;1' values='1;0;1' repeatDur='indefinite'/>
+				</use>
+			</g>
+		</defs>
+		<!-- yes(Check) -->
+		<g id='autosave_yes_check_normal'>
+			<use xlink:href='#autosave_yes_c'/>
+		</g>
+		<g id='autosave_yes_check_over'>
+			<use xlink:href='#autosave_yes_c'/>
+			<use xlink:href='#autosave_yes_ov'/>
+		</g>
+		<g id='autosave_yes_check_focus'>
+			<use xlink:href='#autosave_f'/>
+			<use xlink:href='#autosave_yes_c'/>
+			<use xlink:href='#autosave_yes_fc'/>
+		</g>
+		<g id='autosave_yes_check_focusover'>
+			<use xlink:href='#autosave_f'/>
+			<use xlink:href='#autosave_yes_c'/>
+			<use xlink:href='#autosave_yes_ov'/>
+		</g>
+		<!-- yes(Uncheck) -->
+		<g id='autosave_yes_uncheck_normal'/>
+		<g id='autosave_yes_uncheck_over'>
+			<use xlink:href='#autosave_yes_n'/>
+			<use xlink:href='#autosave_yes_ov'/>
+		</g>
+		<g id='autosave_yes_uncheck_focus'>
+			<use xlink:href='#autosave_f'/>
+			<use xlink:href='#autosave_yes_n'/>
+			<use xlink:href='#autosave_yes_fc'/>
+		</g>
+		<g id='autosave_yes_uncheck_focusover'>
+			<use xlink:href='#autosave_f'/>
+			<use xlink:href='#autosave_yes_n'/>
+			<use xlink:href='#autosave_yes_ov'/>
+		</g>
+		<!-- ボタン -->
+		<ui:button id='autosave_yes_opt' tabstop='true' x='633' y='450' width='33' height='17' on='#autosave_yes_check_normal' on_focus='#autosave_yes_check_focus' on_over='#autosave_yes_check_over' on_focusover='#autosave_yes_check_focusover' off='#autosave_yes_uncheck_normal' off_focus='#autosave_yes_uncheck_focus' off_over='#autosave_yes_uncheck_over' off_focusover='#autosave_yes_uncheck_focusover'/>
+	</g>
+	<!-- [option] autosave:no:true -->
+	<g id='autosave_no'>
+		<!-- イメージ -->
+		<defs>
+			<g id='autosave_no_ov'>
+				<use xlink:href='#autosave_no_o'>
+					<animate attributeName='opacity' begin='0' dur='0.2' keyTimes='0;1' values='0;1' fill='freeze'/>
+				</use>
+			</g>
+			<g id='autosave_no_fc'>
+				<use xlink:href='#autosave_no_o'>
+					<animate attributeName='opacity' begin='0' dur='1' keyTimes='0;0.5;1' values='1;0;1' repeatDur='indefinite'/>
+				</use>
+			</g>
+		</defs>
+		<!-- no(Check) -->
+		<g id='autosave_no_check_normal'>
+			<use xlink:href='#autosave_no_c'/>
+		</g>
+		<g id='autosave_no_check_over'>
+			<use xlink:href='#autosave_no_c'/>
+			<use xlink:href='#autosave_no_ov'/>
+		</g>
+		<g id='autosave_no_check_focus'>
+			<use xlink:href='#autosave_f'/>
+			<use xlink:href='#autosave_no_c'/>
+			<use xlink:href='#autosave_no_fc'/>
+		</g>
+		<g id='autosave_no_check_focusover'>
+			<use xlink:href='#autosave_f'/>
+			<use xlink:href='#autosave_no_c'/>
+			<use xlink:href='#autosave_no_ov'/>
+		</g>
+		<!-- no(Uncheck) -->
+		<g id='autosave_no_uncheck_normal'/>
+		<g id='autosave_no_uncheck_over'>
+			<use xlink:href='#autosave_no_n'/>
+			<use xlink:href='#autosave_no_ov'/>
+		</g>
+		<g id='autosave_no_uncheck_focus'>
+			<use xlink:href='#autosave_f'/>
+			<use xlink:href='#autosave_no_n'/>
+			<use xlink:href='#autosave_no_fc'/>
+		</g>
+		<g id='autosave_no_uncheck_focusover'>
+			<use xlink:href='#autosave_f'/>
+			<use xlink:href='#autosave_no_n'/>
+			<use xlink:href='#autosave_no_ov'/>
+		</g>
+		<!-- ボタン -->
+		<ui:button id='autosave_no_opt' tabstop='true' x='698' y='450' width='50' height='17' on='#autosave_no_check_normal' on_focus='#autosave_no_check_focus' on_over='#autosave_no_check_over' on_focusover='#autosave_no_check_focusover' off='#autosave_no_uncheck_normal' off_focus='#autosave_no_uncheck_focus' off_over='#autosave_no_uncheck_over' off_focusover='#autosave_no_uncheck_focusover'/>
+	</g>
+</svg>
